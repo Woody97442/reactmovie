@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Header from "../components/Header";
 import LikesPage from "./LikesPage";
 import Home from "./Home";
