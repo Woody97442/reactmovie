@@ -46,7 +46,7 @@ function Home() {
   };
 
   const nextPage = async (e) => {
-    if (currentPage + 1 === totalPage) {
+    if (currentPage === totalPage) {
       return;
     }
     let page = currentPage + 1;
@@ -152,7 +152,7 @@ function Home() {
           </div>
           <div className="current">{currentPage}</div>
           <div className="nextPage">
-            {currentPage + 1 !== totalPage && <span>{currentPage + 1}</span>}
+            {currentPage < totalPage && <span>{currentPage + 1}</span>}
           </div>
           <div
             className="page"
